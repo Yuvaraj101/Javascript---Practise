@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.main-container{
+    background-color: #121D2F;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    background-color: #0D131F;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1,h3{
+    color: white;
+    display: inline-block;
+}
+
+.heading{
+    position: relative;
+    top: 70px;
+    right: 30px;
+}
+
+label{
+    color: #ec6618;
+    font-size: small;
+    display: block;
+    visibility: hidden;
+  
+}
+
+i{ 
+    color:aqua;
+}
+
+#username,#phone,#email,#password,#confirmpass{
+    background: transparent;
+    border: none;
+    padding: 10px;
+    border-bottom: solid aqua 2px;
+    color: white;
+    display: inline-block;
+    width: 300px;
+    margin-top: 30px;
+    font-size: medium;
+
+}
+
+#username,#phone,#email,#password,#confirmpass:focus{
+    outline: none;
+}
+
+#submitbtn{
+    background: transparent;
+    color: aqua;
+    border: solid aqua 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin-top: 20px;
+    transition: 1s;
+    font-size: medium;
+
+}
+
+#usericon{
+    visibility: hidden;   
+}
+
+#phoneicon{
+    visibility: hidden;
+}
+
+#emailicon{
+    visibility: hidden;
+}
+
+#passicon{
+    visibility: hidden;
+}
+
+#conficon{
+    visibility: hidden;
+}
+
+#submitbtn:hover{
+    background-color: #ffffff;
+    color: #0D131F;
+    cursor: pointer;
+
+}
+
+.formpara{
+    background-color: #ec6618;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: -80px;
+    opacity: 0;
+    transition: 2s;
+
+}
+
+
+
