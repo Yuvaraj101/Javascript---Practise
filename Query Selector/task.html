@@ -1,0 +1,27 @@
+
+<p>hi</p>
+<p>heloo</p>
+<p>bye</p>
+
+<button onclick="show()">
+    click
+</button>
+
+<script>
+
+    function show()
+    {
+        var para = document.querySelectorAll("p")
+        console.log(para);
+
+        para.forEach(
+            function(content)
+            {
+                console.log(content.textContent);
+            }
+        )
+
+    }
+
+
+</script>

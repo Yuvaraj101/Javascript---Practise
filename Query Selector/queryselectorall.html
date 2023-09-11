@@ -1,0 +1,26 @@
+<h1>one</h1>
+<h1>two</h1>
+<h1>three</h1>
+
+<button onclick="show()">click me</button>
+
+<script>
+
+    function show()
+    {
+        //all the selected h1 elements are selected and stored in a nodeList which is similar to array
+        var heading = document.querySelectorAll("h1") 
+        //prints only an nodeList or array
+        console.log(heading);
+        //all the contents of the h1 are printed using for eachloop
+        //to access all the elements of the array and print the content of them 
+        heading.forEach(
+            function(str)
+            {
+                console.log(str.textContent);
+            }
+        )
+
+    }
+
+</script>

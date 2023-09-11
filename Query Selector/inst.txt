@@ -1,0 +1,24 @@
+queryselector : 
+
+we can select using tag,class,id
+
+eg1:
+
+<h1>hello</h1>
+<button onclick="show()">change</button>
+
+<script>
+    function show()
+    {
+        var ha = document.querySelector("h1")
+        ha.textContent = "bye"
+    }
+</script>
+
+eg:
+
+what if we have two paragraph tags ?
+(only first one will take the effect)
+
+just like how css selectors works.. and we should use . and # while selecting
+
