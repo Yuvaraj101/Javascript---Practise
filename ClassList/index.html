@@ -1,0 +1,42 @@
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        background-color: black;
+
+    }
+
+    .color{
+        background-color: red;
+    }
+</style>
+
+
+
+
+<div class="box" id="popup">
+
+</div>
+
+<button onclick="changered()">add</button>
+<button onclick="def()">remove</button>
+
+<script>
+
+    var popup = document.getElementById("popup")
+
+    function changered()
+    {
+        popup.classList.add("color")
+        
+    }
+
+    function def()
+    {
+        popup.classList.remove("color")
+    }
+
+
+
+
+</script>
