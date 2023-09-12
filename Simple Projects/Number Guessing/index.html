@@ -1,0 +1,43 @@
+
+<h1>Guess the number from 1 to 10</h1>
+<!--Id should be unique-->
+<input type="text" id="inputbox">
+
+<button onclick="calc()">Check</button>
+
+<p id="para">You are right / wrong</p>
+
+<script>
+//generation of random number from 1 to 10
+    var rand = Math.floor(Math.random()*10)+1
+//printing the random number
+    console.log(rand)
+//selecting the input box
+    var inputbox = document.getElementById("inputbox")
+    //seleting the para tag
+    var para = document.getElementById("para")
+
+//this funtcion is used when the button is clicked
+    function calc(){
+//getting the inoutbox value and storing it in a variable
+        var ev = Number(inputbox.value)
+    //checking if entered value and random generated number is same or not
+        if(ev == rand)
+        {
+            //if same log to the console  
+            console.log("right")
+            //changing the content of the paragraph tag
+            para.textContent = "right"
+
+        }
+        else
+        {
+            //if not same log to the console  
+            console.log("wrong")
+            //changing the content of the paragraph tag
+            para.textContent = "wrong"
+        }
+        
+    }
+
+</script>
