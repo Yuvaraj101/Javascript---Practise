@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+
+//Approach one using classlist we can add color class to the button
+
+            // function changecolor()
+            // {
+            //     var butn = document.getElementById("butn")
+            //     butn.classList.add("color")
+            // }
+
+//Second approach by manipulating the CSS properties
+            // function changecolor()
+            // {
+            //     var butn = document.getElementById("butn")
+            //     butn.style.backgroundColor="red"
+            // }
+
+
+//Third approach using the event class and console to find the target and adding the classlist element
+            function changecolor(event){
+                event.target.classList.add("color")
+                console.log(event);
+
+            }
+
+        </script>
+
+        <style>
+
+            .color{
+                background-color: red;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <button onclick="changecolor(event)" class="" id="butn">change color</button>
+
+    </body>
+</html>
