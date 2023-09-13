@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+
+        <button id="btn1">john</button>
+        <button id="btn2">mithchel</button>
+        <button id="btn3">jessi</button>
+
+        <h1>see here</h1>
+        
+        <script>
+
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            var btn3 = document.getElementById("btn3")
+
+            var heading = document.querySelector("h1")
+            //used textContent
+            btn1.addEventListener("click",function(event)
+            {
+                console.log(event.target.innerHTML);
+                heading.textContent = event.target.innerHTML
+            })
+            //used innerHtml
+            btn2.addEventListener("click",function(event)
+            {
+                console.log(event.target.innerText);
+                heading.innerHTML = event.target.innerText
+
+            })
+
+            //used innerText
+            btn3.addEventListener("click",function()
+            {
+                heading.innerText = event.target.innerText
+            })
+
+            //all resulting in the same type of output
+        </script>
+
+    </body>
+</html>
