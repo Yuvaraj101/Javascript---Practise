@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.content{
+    text-align: center;
+}
+
+.parent{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+button{
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 8px;
+}
+
+button:hover{
+    box-shadow: inset 5px 10px 10px black;
+    cursor: pointer;
+}
