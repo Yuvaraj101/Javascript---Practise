@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.one{
+    background-color: aqua;
+    width: 100vw;
+    height: 100px;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+.two{
+    background-color: rgb(65, 255, 32);
+    width: 100vw;
+    height: 100px;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+.three{
+    background-color: rgb(219, 255, 36);
+    width: 100vw;
+    height: 100px;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+
+.slider-container{
+    display: flex;
+    margin-left: 0vw;
+    transition: 2s;
+    
+    
+}
+
+.main-container{
+    display: flex;
+}
