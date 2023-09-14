@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            .popup{
+                display: inline-block;
+                background-color: rgb(0, 0, 0);
+                color: rgb(252, 254, 255);
+                text-align: center;
+                width: 30%;
+                margin-left: 30%;
+                position: relative;
+                bottom: 0px;
+                transition: 1s;
+                font-size: large;
+            }
+
+            p{
+                display: inline-block;
+            }
+            p:nth-child(2)
+            {
+                font-size: 15px;
+                padding: 10px;
+                position: relative;
+                left: 40px ;
+                color: rgb(0, 0, 0);
+                background-color: rgb(255, 255, 255);
+                
+            }
+
+            p:nth-child(2):hover{
+                background-color: red;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div class="popup">
+            
+                <p>Limited time offer sale 40% off Hurry!!</p>
+                <p id="btn">x</p>
+                 
+        </div>
+
+        <script>
+            var btn = document.getElementById("btn")
+            var para = document.querySelector(".popup")
+            btn.addEventListener("click",function()
+            {
+                para.style.bottom="100px"
+
+            })
+            
+        </script>
+
+    </body>
+</html>

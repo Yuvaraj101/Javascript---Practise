@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                height: 400px;
+                width: 400px;
+                border: solid black 1px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <button id="btn">click</button>
+
+        <div class="box"></div>
+
+        <script>
+            var btn = document.getElementById("btn")
+            var divbox = document.querySelector(".box")
+            btn.addEventListener("click",function()
+            {
+                var heading = document.createElement("h1")
+                heading.textContent = "hello"
+                divbox.append(heading)
+
+                console.log(heading);
+
+            })
+        </script>
+    </body>
+</html>
