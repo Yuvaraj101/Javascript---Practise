@@ -1,0 +1,23 @@
+<input type="text" id="inputbox">
+<h1 id="heading"></h1>
+<!-- <button onclick="change()">change</button> -->
+<!-- <button id="btn">change</button> -->
+
+<script>
+    // function change()
+    // {
+    //     var heading = document.getElementById("heading")
+    //     heading.textContent = "bye"
+    // }
+
+    var inputbox = document.getElementById("inputbox")
+    var heading = document.getElementById("heading")
+    
+    inputbox.addEventListener("keyup",function()
+    {
+        
+        heading.textContent = inputbox.value
+
+
+    })
+</script>
