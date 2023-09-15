@@ -1,0 +1,15 @@
+.slider-container{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    
+}
+
+.main-container{
+    display: flex;
+}
+
+h2{
+    margin-left: 60px;
+    font-size: 50px;
+}
