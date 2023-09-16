@@ -45,7 +45,8 @@ h2:hover{
     width: 15vw;
     height: 700px;
     padding: 30px;
-    margin-left: 0vw;
+    margin-left: -100vw;
+    transition: 1s;
     
 }
 
