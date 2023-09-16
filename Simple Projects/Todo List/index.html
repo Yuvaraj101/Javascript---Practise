@@ -11,30 +11,32 @@
     <button id="addbtn">add</button>
 
     <ul id="list">
-        <li>see your tasks here <button id="deletebtn">delete</button></li>
+        
     </ul>
 
     <script>
         var list = document.getElementById("list")
         var inputbox = document.getElementById("inputbox")
         var addbtn = document.getElementById("addbtn")
-        var deletebtn = document.getElementById("deletebtn")
-
+        
         addbtn.addEventListener("click",function()
         {
             
             var ev = inputbox.value
             console.log(ev);
             var listitem = document.createElement("li")
-            listitem.innerHTML = ev + "<button id=\"deletebtn\">delete</button>"
+            listitem.innerHTML = ev + "<button class=\"deletebtn\">delete</button>"
             list.append(listitem)
-        })
+            var deletebtn = listitem.querySelector(".deletebtn")
+            deletebtn.addEventListener("click",function(event)
+            {
+                event.target.parentElement.remove()
+                console.log(event);
+            })
 
-        deletebtn.addEventListener("click",function(event)
-        {
-            event.target.parentElement.remove()
-            console.log(event);
+            inputbox.value = ""
         })
+        
     </script>
     
 </body>
