@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    border: 1px solid black; 
+}
+
+ul,li{
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+
+ul{
+
+    margin-left: 50vw;
+}
+h2{
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+li:hover{
+    color: cyan;
+    cursor: pointer;
+
+}
+
+h2:hover{
+    cursor: pointer;
+    color: cyan;
+
+}
+
+.sidebar{
+    background: black;
+    color: white;
+    width: 15vw;
+    height: 700px;
+    padding: 30px;
+    margin-left: 0vw;
+    
+}
+
+h3{
+    padding: 10px;
+    transition: 1s;
+}
+
+#cancelmark{
+    position: relative;
+    bottom: 35vh;
+    left: 14vw;
+    color: rgb(255, 255, 255);
+    
+}
+
+#cancelmark:hover{
+    color: red;
+    cursor: pointer;
+}
+
+h3:hover{
+    cursor: pointer;
+    color: cyan;
+    transform: scale(0.9);
+    
+}
+
