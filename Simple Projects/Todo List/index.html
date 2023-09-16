@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="inputbox">
+    <button id="addbtn">add</button>
+
+    <ul id="list">
+        <li>see your tasks here <button id="deletebtn">delete</button></li>
+    </ul>
+
+    <script>
+        var list = document.getElementById("list")
+        var inputbox = document.getElementById("inputbox")
+        var addbtn = document.getElementById("addbtn")
+        var deletebtn = document.getElementById("deletebtn")
+
+        addbtn.addEventListener("click",function()
+        {
+            
+            var ev = inputbox.value
+            console.log(ev);
+            var listitem = document.createElement("li")
+            listitem.innerHTML = ev + "<button id=\"deletebtn\">delete</button>"
+            list.append(listitem)
+        })
+
+        deletebtn.addEventListener("click",function(event)
+        {
+            event.target.parentElement.remove()
+            console.log(event);
+        })
+    </script>
+    
+</body>
+</html>
