@@ -22,5 +22,14 @@ breadbtn.addEventListener("click",function()
         count = 0
     }
     console.log(count);
+    
+})
+
+var cancelbtn = document.getElementById("cancelmark")
+
+cancelbtn.addEventListener("click",function()
+{
+    console.log("fd");
+    sidebar.style.marginLeft = "-100vw"
 
 })
