@@ -25,7 +25,7 @@
         {
             
             var ev = inputbox.value
-            console.log(ev);
+            
             var listitem = document.createElement("li")
             listitem.innerHTML = ev + "<button class=\"deletebtn\">delete</button>" + "<button class=\"editbtn\">edit</button>"
             list.append(listitem)
@@ -35,6 +35,19 @@
                 event.target.parentElement.remove()
                 console.log(event);
             })
+
+            var editbtn = listitem.querySelector(".editbtn")
+            editbtn.addEventListener("click",function(event)
+            {
+                var listItem = event.target.parentElement;
+                var currentext = listItem.firstChild.nodeValue;
+                var editbox = document.createElement("input")
+                editbox.value = currentext
+                console.log(currentext);
+                
+            })
+
+ 
 
             
 
