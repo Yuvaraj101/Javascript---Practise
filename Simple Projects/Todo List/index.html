@@ -10,6 +10,8 @@
     <input type="text" id="inputbox">
     <button id="addbtn">add</button>
 
+    
+
     <ul id="list">
         
     </ul>
@@ -25,7 +27,7 @@
             var ev = inputbox.value
             console.log(ev);
             var listitem = document.createElement("li")
-            listitem.innerHTML = ev + "<button class=\"deletebtn\">delete</button>"
+            listitem.innerHTML = ev + "<button class=\"deletebtn\">delete</button>" + "<button class=\"editbtn\">edit</button>"
             list.append(listitem)
             var deletebtn = listitem.querySelector(".deletebtn")
             deletebtn.addEventListener("click",function(event)
@@ -33,6 +35,8 @@
                 event.target.parentElement.remove()
                 console.log(event);
             })
+
+            
 
             inputbox.value = ""
         })
