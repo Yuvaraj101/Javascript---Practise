@@ -10,51 +10,50 @@
     <input type="text" id="inputbox">
     <button id="addbtn">add</button>
 
-    
-
     <ul id="list">
         
     </ul>
 
     <script>
-        var list = document.getElementById("list")
-        var inputbox = document.getElementById("inputbox")
-        var addbtn = document.getElementById("addbtn")
-        
-        addbtn.addEventListener("click",function()
-        {
-            
-            var ev = inputbox.value
-            
-            var listitem = document.createElement("li")
-            listitem.innerHTML = ev + "<button class=\"deletebtn\">delete</button>" + "<button class=\"editbtn\">edit</button>"
-            list.append(listitem)
-            var deletebtn = listitem.querySelector(".deletebtn")
-            deletebtn.addEventListener("click",function(event)
-            {
-                event.target.parentElement.remove()
-                console.log(event);
-            })
+        var list = document.getElementById("list");
+        var inputbox = document.getElementById("inputbox");
+        var addbtn = document.getElementById("addbtn");
 
-            var editbtn = listitem.querySelector(".editbtn")
-            editbtn.addEventListener("click",function(event)
-            {
+        addbtn.addEventListener("click", function () {
+            var ev = inputbox.value;
+
+            var listitem = document.createElement("li");
+            listitem.innerHTML = ev + " <button class=\"deletebtn\">Delete</button> <button class=\"editbtn\">Edit</button>";
+            list.append(listitem);
+
+            var deletebtn = listitem.querySelector(".deletebtn");
+            deletebtn.addEventListener("click", function (event) {
+                event.target.parentElement.remove();
+            });
+
+            var editbtn = listitem.querySelector(".editbtn");
+            editbtn.addEventListener("click", function (event) {
                 var listItem = event.target.parentElement;
-                var currentext = listItem.firstChild.nodeValue;
-                var editbox = document.createElement("input")
-                editbox.value = currentext
-                console.log(currentext);
-                
-            })
+                var currentText = listItem.firstChild.nodeValue.trim();
+                var editbox = document.createElement("input");
+                editbox.value = currentText;
 
- 
+                var savebtn = document.createElement("button");
+                savebtn.textContent = "Save";
 
-            
+                savebtn.addEventListener("click", function () {
+                    currentText = editbox.value;
+                    // Replace the entire innerHTML of the list item
+                    listItem.innerHTML = currentText + " <button class=\"deletebtn\">Delete</button> <button class=\"editbtn\">Edit</button>";
+                });
 
-            inputbox.value = ""
-        })
-        
+                listItem.innerHTML = ""; // Clear the list item content
+                listItem.appendChild(editbox);
+                listItem.appendChild(savebtn);
+            });
+
+            inputbox.value = "";
+        });
     </script>
-    
 </body>
 </html>
