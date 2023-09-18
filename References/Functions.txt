@@ -1,0 +1,60 @@
+syntax:
+
+function function_name()
+{
+//block
+}
+
+eg:
+
+var factor="vijay"  //global scope 
+var fplayer="john"
+var fmovie="leo"
+
+
+
+function favorite()
+{
+    console.log("favorite actor:"+factor);
+    console.log("favorite player:"+fplayer);
+    console.log("favorite movie:"+fmovie);
+}
+
+favorite()
+
+paramaters: to pass values explicitly
+
+return:
+
+function area()
+
+{
+    return "ggg"
+
+}
+
+area()
+console.log(area());  //area() will be replaced by ggg
+
+eg2:
+
+function add(a,b)
+
+{
+    return a+b  //return 30
+
+}
+
+console.log(add(10,20));  //add(10,20) will be replace by 30
+
+
+
+
+
+
+
+
+
+
+
+
