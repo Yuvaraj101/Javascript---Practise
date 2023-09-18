@@ -1,0 +1,13 @@
+-collection of similar type of data
+
+aceesing array array[0],array[1]
+
+changing values of an array - array[0]=20
+
+adding elements into the array :
+
+fruits.push("")//add elements to end
+fruits.pop() //remove the elements to the end 
+
+to find length:
+fruits.length
