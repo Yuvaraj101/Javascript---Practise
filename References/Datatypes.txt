@@ -1,0 +1,13 @@
+to check the type use typeof()
+
+number
+string
+boolean--true,false
+null--refers to object
+undefined -var a
+
+primitive and non primitive
+
+number,string,boolean,null,undefined - primitve datatypes
+non-primitve - array,objects
+
