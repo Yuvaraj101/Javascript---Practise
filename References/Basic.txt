@@ -1,0 +1,32 @@
+-easy to learn
+-popular programming language
+-creation of interactive and dynamic webpages
+-semicolon not mandatory
+-javascript is case sensitive(it treats capital and small differently)
+
+datatypes,operators
+
+print -- console.log("")
+
+variables: - 3types (good practise to declare variables otherwise they become public)
+
+uses var keyword
+it acts as an container - to store something on something
+
+1.var - global scope(accessible anywhere)
+2.let - local scope (accessible only within the block)
+3.const - once assigned cannot be changed  (but it can be changed in var,let)
+
+keyword: predfined functions
+
+comments: //,/* */  - code readability
+
+prompt() --for user input , it is related to browser
+
+
+
+
+
+
+
+
