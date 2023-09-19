@@ -1,0 +1,8 @@
+and && :
+
+both true we get true else we get false
+or
+if there is any false we get false
+
+OR ||:
+if there is any true we get true
