@@ -1,0 +1,13 @@
+for loop:
+
+for(intialization;conditon;increment/decrement)
+{
+}
+
+
+eg1:
+
+for(var i=1;i<=10;i++)
+{
+    console.log(i + "x2=" + i*2);
+}
