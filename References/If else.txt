@@ -1,0 +1,55 @@
+conditonal statement
+
+if (false) {
+    console.log("hello");
+    
+} //no output
+
+if (true) {
+    console.log("hello");
+    
+} //hello
+
+console.log(10<5) //false
+console.log(10>5) //true
+console.log(10==5) //true
+
+*** else is optional ***
+
+var rain = false
+
+if (rain) {  
+    console.log("take an unbrella");  
+    
+} else {
+    console.log("enjoy the rain");
+    
+}
+
+(if condition is true its block is executed else is skipped)
+(if conditon is false means else block is executed)
+
+
+eg3:
+
+var season = "winter"
+
+if(season=="spring")
+{
+    console.log("enjoy the blooms");
+}
+else if(season=="winter")
+{
+    console.log("enjoy the cold");
+}
+else if(season=="autumn")
+{
+    console.log("enjoy the autumn");
+}
+else if(season=="summer")
+{
+    console.log("enjoy the sun");
+}
+
+(it gets stopped when one of the else if becomes true . it prevents 
+from excuting unecseaary statements or conditions)
