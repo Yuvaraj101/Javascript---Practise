@@ -1,0 +1,10 @@
+increment and decrement operators
+
+post-increment:
+
+var a=10
+var b=a++ //b=10++
+console.log(b) //10
+console.log(a) //11
+
+(it is incremented only when it is meeting 'a')
