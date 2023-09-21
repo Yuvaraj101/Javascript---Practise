@@ -1,0 +1,9 @@
+alert("good") -- a pop up menu will appear
+
+-----------------------------
+
+onclick="deleteitem(event)
+
+onclick: eventhandler
+deleteitem : event
+event : object
