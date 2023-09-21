@@ -1,0 +1,16 @@
+-Document Object Model
+-Tree like structure-browser creates a object named document everytime 
+the webpage is opened
+-to manipulate the webpage
+-internal javascript - using <script>
+
+Console- is the output panel(if theres any error we check them from there)
+to view the cursor in the browser: inspect,console tab
+
+To manipulate some tag :
+
+step1. To select the tag (using id : it is unique should not be repeated again)
+	can be selected using getElementById
+	Whole tag with its contents will be selelcted.
+
+step2. But to get only the contents - log the id.TextContent
