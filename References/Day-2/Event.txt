@@ -1,0 +1,42 @@
+
+onclick="deleteitem(event)
+
+onclick: eventhandler
+deleteitem : event
+event : object
+
+
+<h1  onclick="deleteitem(event)">one</h1>
+
+<script>
+
+    function deleteitem(event)
+    {
+        event.target.remove()//target is one of the many parameters in the event
+        console.log(event) //to check the details in the event object
+    }
+
+</script>
+
+eg1:
+
+<h1  onclick="deleteitem(event)">one</h1>
+<h1  onclick="deleteitem(event)">two</h1>
+<h1  onclick="deleteitem(event)">three</h1>
+<h1  onclick="deleteitem(event)">four</h1>
+<h1  onclick="deleteitem(event)">five</h1>
+
+
+<script>
+
+
+    function deleteitem(event)
+    {
+        event.target.remove()
+        console.log(event)
+
+    }
+
+</script>
+
+------------------------------------------------
