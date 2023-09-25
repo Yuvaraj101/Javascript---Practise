@@ -1,0 +1,101 @@
+textContent : to modify text textcontent ie. add or remove we use text content
+
+innerHTML : to pick and modify the html element
+
+eg1:
+
+<div id="box">
+    <p>gsood</p>
+    <h2>gsood</h2>
+</div>
+
+<script>
+    var box = document.getElementById("box")
+    box.innerHTML = "<h1>bye</h1>"
+    console.log(box.innerHTML);
+    
+</script>
+
+--------------------------------
+append: to push content onto the tag
+
+<p id="para">hello</p>
+
+<script>
+    var para = document.getElementById("para")
+    para.append("bye")
+
+</script>
+
+-------------------------------
+//append operation in todo list
+
+
+<ul id="container">
+    <li>hello</li>
+</ul>
+
+<button onclick="add()">add list</button>
+
+<script>
+
+    var cont = document.getElementById("container")
+    function add(){
+        //creation of html li tag
+        var lisitem = document.createElement("li")
+        //initally li will be empty so,add content to it
+        lisitem.textContent="hello"
+        //then append 
+
+        cont.append(lisitem)
+    }
+</script>
+
+
+--------------------------------------------------
+
+<input type="text" id="inputbox">
+<button onclick="add()">add</button>
+
+<li id="list">enter your tasks</li>
+
+<script>
+//selecting input box
+    var inputbox = document.getElementById("inputbox")
+    //selecting list element
+    var list = document.getElementById("list")
+    //action to be performed when the button is clicked
+    function add()
+    {
+        //entered value in the input box is stored in a variable
+        var ev = inputbox.value 
+        //creating a new html element as li,p,h2,h2, anything 
+        var listitem = document.createElement("li")
+        //initally the content will be empty so, we add content inside the tag 
+        listitem.textContent = ev
+        //finally append the list item
+        list.append(listitem)
+    }
+
+</script>
+
+--------------------------------
+
+remove() :
+
+
+<h1 id="heading">hello</h1>
+<button onclick="deleteitem()">delete</button>
+
+<script>
+    var heading = document.getElementById("heading")
+
+    function deleteitem()
+    {
+        heading.remove()
+
+    }
+
+</script>
+
+----------------------------------
