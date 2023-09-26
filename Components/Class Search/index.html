@@ -34,8 +34,6 @@
         }
 
 
-
-
     </style>
 </head>
 <body>
@@ -61,12 +59,34 @@
             <h1>ten</h1>
 
             
+
+            
         </div>
     </div>
 
     <script>
-
         
+        
+        inputbox.addEventListener("keyup",function()
+        {
+            var inputbox = document.getElementById("inputbox")
+            var ev = inputbox.value
+            var heady = document.querySelectorAll("h1")
+            
+            heady.forEach(function(el){
+                var itemtext = el.textContent
+                if(itemtext.indexOf(ev) < 0)
+                {
+                    el.style.display = "none"
+                }
+                else{
+                    el.style.display = "block"
+
+                }
+            })
+            
+            
+        })
     </script>
 </body>
 </html>
