@@ -1,0 +1,51 @@
+when a button is clicked - it is an event
+what it is to be performed is done by the - eventHandler
+
+eg1: onclick event
+
+<h1 id="head">Hello World</h1>
+<button onclick="bclicked()">Change</button>
+
+<script>
+    function bclicked()
+    {
+        var p = document.getElementById("head")
+        p.textContent = "bye world"
+        console.log(p.textContent);
+
+    }
+    
+</script>
+
+eg2: ---------------------------------------------------
+
+input box - instead of textcontent use value
+
+Enter number 1:<input type="text" id="num1">
+<br>
+Enter number 2:<input type="text" id="num2">
+
+<button onclick="calc()">Calculate</button>
+
+<p id="para"></p>
+
+
+<script>
+    function calc()
+    {
+        //selecting the input tag
+        var a = document.getElementById("num1")
+        var b = document.getElementById("num2")
+        var g = document.getElementById("para")
+        //take the value from the input box and calculate it
+        var total = a.value + b.value
+        //changing paragrapgh content to total
+        g.textContent = total
+
+        console.log(total);
+
+    }
+</script>
+
+eg3:
+
