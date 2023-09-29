@@ -1,0 +1,33 @@
+eg1:aq
+
+<h1 id="heading">hello world</h1>
+<button onclick="change()">Color change</button>
+
+<script>
+    var heading = document.getElementById("heading")
+
+    function change()
+    {
+
+        heading.style.color="red"
+    }
+</script>
+
+-------------------------------------------
+manipulating attributes
+
+
+<img id="image">
+<button onclick="show()">Show image</button>
+
+<script>
+	//selecting the element
+    var img = document.getElementById("image")
+
+    function show()
+    {
+//adding the src attribute and its value
+        img.setAttribute("src","https://source.unsplash.com/200x200?dog")
+    }
+
+</script>
