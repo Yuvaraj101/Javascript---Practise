@@ -1,0 +1,19 @@
+<script>
+    function calc()
+    {
+        //selecting the input tag
+        var a = document.getElementById("num1")
+        var b = document.getElementById("num2")
+        var g = document.getElementById("para")
+        //take the value from the input box and calculate it
+        var total = Number(a.value) + Number(b.value)
+        //changing paragrapgh content to total
+        g.textContent = total
+
+        console.log(total);
+
+        
+
+
+    }
+</script>
