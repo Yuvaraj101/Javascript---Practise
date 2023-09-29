@@ -1,0 +1,15 @@
+//job is to place the hide class and remove when the button is clicked
+
+<script>
+
+    var popup = document.getElementById("popup")
+
+    function controlpopup()
+    {
+        //popup.classList.add()
+        popup.classList.remove("hide")
+    }
+
+</script>
+
+//classlist is used to add or remove the class in the html tags
