@@ -1,0 +1,9 @@
+Math.random()  : generates random values from 0.1 to 0.9
+Math.random()*10 : to convert them to a single digit decimal value ie. 9.12,4.54....
+
+
+Math.floor() - rounds off to the lowest whole number
+Math.floor(Math.random()*10) -- to generate whole number in a random manner //from 0 t0 9
+
+var ggg = Math.floor(Math.random()*10) //from 1 to 10 random values
+console.log(ggg+1);
