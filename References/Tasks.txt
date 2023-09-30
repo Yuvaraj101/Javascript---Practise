@@ -1,2 +1,0 @@
-1.odd or even (bitwise,modulus)
-2.vowels or consonants
