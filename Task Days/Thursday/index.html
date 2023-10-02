@@ -35,20 +35,27 @@
         {
             var tablerow = document.createElement("tr")
             table.append(tablerow)
-            for(i=1;i<=4;i++)
-            {
-                var tabledata = document.createElement("td")
-                tabledata.innerHTML = "hello" 
-                tablerow.append(tabledata)
 
-            }
-            tabledata.innerHTML = "<button id=\"delbtn\">delete</button>"
-            tablerow.append(tabledata)
+            var tabledata1 = document.createElement("td")
+            var tabledata2 = document.createElement("td")
+            var tabledata3 = document.createElement("td")
+            var tabledata4 = document.createElement("td")
+
+            tabledata1.innerHTML = "Dami" 
+            tabledata2.innerHTML = "24" 
+            tabledata3.innerHTML = "japan" 
+            tabledata4.innerHTML = "<button id=\"delbtn\">delete</button>" 
+                
+            tablerow.append(tabledata1)
+            tablerow.append(tabledata2)
+            tablerow.append(tabledata3)
+            tablerow.append(tabledata4)
+
             
             var delbtn = document.getElementById("delbtn")
             delbtn.addEventListener("click",function(event)
             {
-                console.log("hello");
+                console.log(event.target.parentElement.remove());
             })
         })
 
