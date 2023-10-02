@@ -16,10 +16,13 @@
                 <td>name</td>
                 <td>age</td>
                 <td>place</td>
+                <td>action</td>
             </tr>
         </table>
 
         <button id="btn">click to add</button>
+        
+        
 
 
     </div>
@@ -31,16 +34,25 @@
         btn.addEventListener("click",function()
         {
             var tablerow = document.createElement("tr")
-            table.appendChild(tablerow)
-            for(i=1;i<=3;i++)
+            table.append(tablerow)
+            for(i=1;i<=4;i++)
             {
                 var tabledata = document.createElement("td")
-                tabledata.textContent = "hello"
+                tabledata.innerHTML = "hello" 
                 tablerow.append(tabledata)
 
             }
-
+            tabledata.innerHTML = "<button id=\"delbtn\">delete</button>"
+            tablerow.append(tabledata)
+            
+            var delbtn = document.getElementById("delbtn")
+            delbtn.addEventListener("click",function(event)
+            {
+                console.log("hello");
+            })
         })
+
+
 
     </script>
 </body>
