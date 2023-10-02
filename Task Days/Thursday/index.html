@@ -55,7 +55,7 @@
             var delbtn = document.getElementById("delbtn")
             delbtn.addEventListener("click",function(event)
             {
-                console.log(event.target.parentElement.remove());
+                console.log(event.target.parentElement.parentNode.remove());
             })
         })
 
