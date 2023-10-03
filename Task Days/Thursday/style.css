@@ -3,6 +3,10 @@
     padding: 0%;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .main-container{
     width: 100vw;
     height: 100vh;
@@ -27,9 +31,54 @@
     align-items: center;
 }
 
+table{
+    border-collapse: collapse;
+    border-color: transparent
+}
 
+th,td{
+    padding: 20px;
+    font-size: 20px;
+}
 
+input[type="text"]{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(238, 2, 255);
+    padding: 10px;
+    width: 20rem;
+    
+}
 
-#savebtn{
+input[type="text"]:focus{
+    outline: none;
+    
+}
+
+select {
+    
+    /*  other styles for aesthetics */
     width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+  }
+
+select:focus{
+    outline: none;
+}
+
+#submitbtn{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 1rem;
+}
+
+#submitbtn:hover{
+    cursor: pointer;
 }
