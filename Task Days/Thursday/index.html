@@ -3,64 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-    </style>
+    <title>Table Data</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
 
-        <table border="1px">
-            <tr>
-                <td>name</td>
-                <td>age</td>
-                <td>place</td>
-                <td>action</td>
+    <div class="main-container">
+
+        <div class="child-container">
+
+            
+            <table border="1">
+                
+                <tr>
+                    <td>
+                        <label for="textbox">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="textbox">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="agebox">Age</label>
+                    </td>
+                    <td>
+                    <input type="text" id="agebox">
+                </td>
             </tr>
+            
+            <tr>
+                <td>
+                    <label for="">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" id="male">
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="">Course</label>
+                </td>
+                
+                <td>
+                    <select name="" id="">
+                        <option value="">Javascript</option>
+                        <option value="">Python</option>
+                        <option value="">Rust</option>
+                        <option value="">C Programming</option>
+                    </select>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="emailbox">Email</label>
+                </td>
+                <td>
+                    <input type="email" id="emailbox">
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2" colspan="2">
+                    <button id="savebtn">Save</button>
+                </td>
+            </tr>
+            
         </table>
-
-        <button id="btn">click to add</button>
         
-        
-
+    </div>
 
     </div>
 
-    <script>
+    <script src="script.js"></script>
 
-        var btn = document.getElementById("btn")
-        var table = document.querySelector("table")
-        btn.addEventListener("click",function()
-        {
-            var tablerow = document.createElement("tr")
-            table.append(tablerow)
-
-            var tabledata1 = document.createElement("td")
-            var tabledata2 = document.createElement("td")
-            var tabledata3 = document.createElement("td")
-            var tabledata4 = document.createElement("td")
-
-            tabledata1.innerHTML = "Dami" 
-            tabledata2.innerHTML = "24" 
-            tabledata3.innerHTML = "japan" 
-            tabledata4.innerHTML = "<button id=\"delbtn\">delete</button>" 
-                
-            tablerow.append(tabledata1)
-            tablerow.append(tabledata2)
-            tablerow.append(tabledata3)
-            tablerow.append(tabledata4)
-
-            
-            var delbtn = document.getElementById("delbtn")
-            delbtn.addEventListener("click",function(event)
-            {
-                console.log(event.target.parentElement.parentNode.remove());
-            })
-        })
-
-
-
-    </script>
 </body>
 </html>
