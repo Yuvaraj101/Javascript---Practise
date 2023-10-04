@@ -76,9 +76,33 @@ select:focus{
     width: 100%;
     padding: 10px;
     font-size: 15px;
+    border: none;
     border-radius: 1rem;
+    background-color: rgba(255, 255, 255, .4);
+    color: rgb(0, 0, 0);
+    transition: 1s;
 }
 
 #submitbtn:hover{
     cursor: pointer;
+    background-color: white;
+    color: black;
+    transform: scale(0.9);
+    padding: 10px;
+}
+
+.table-box{
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-table{
+    border: 1px solid black;
+    
+    
 }
