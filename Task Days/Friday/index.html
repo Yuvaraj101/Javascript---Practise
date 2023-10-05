@@ -12,6 +12,8 @@
     <input type="radio" name="gender" id="Female" value="Female">
     <label for="Female">Female Person</label>
 
+    <h2 id="heading">see here</h2>
+
     <button onclick="calc()">calculate</button>
 
     <script>
@@ -21,6 +23,7 @@
         
         function calc()
         {
+            heading = document.getElementById("heading")
 
         var genderval = ""
         radbtns.forEach(function(bt)
@@ -28,6 +31,7 @@
             if(bt.checked)
             {
                 genderval = bt.value
+                heading.textContent = bt.value
             }
         })
         console.log(genderval);
