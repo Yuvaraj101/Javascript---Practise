@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+
+    <input type="radio" name="gender" id="Male" value="Male">
+    <label for="Male">Male Person</label>
+    <input type="radio" name="gender" id="Female" value="Female">
+    <label for="Female">Female Person</label>
+
+    <button onclick="calc()">calculate</button>
+
+    <script>
+
+        radbtns = document.getElementsByName("gender")
+        console.log(radbtns);
+        
+
+  
+
+
+        
+        function calc()
+        {
+
+        
+
+        var genderval = ""
+        radbtns.forEach(function(bt)
+        {
+            if(bt.checked)
+            {
+                genderval = bt.value
+            }
+        })
+        console.log(genderval);
+    }
+    </script>
+    
+</body>
+</html>
