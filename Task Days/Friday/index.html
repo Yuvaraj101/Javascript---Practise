@@ -7,35 +7,66 @@
 </head>
 <body>
 
-    <input type="radio" name="gender" id="Male" value="Male">
+    <!-- <input type="radio" name="gender" id="Male" value="Male">
     <label for="Male">Male Person</label>
     <input type="radio" name="gender" id="Female" value="Female">
     <label for="Female">Female Person</label>
 
     <h2 id="heading">see here</h2>
 
-    <button onclick="calc()">calculate</button>
+    <button onclick="calc()">calculate</button> -->
+
+ 
+
+    Name <input type="text" id="namebox"> 
+    <br>
+   Age <input type="text" id="agebox"> 
+    <br>
+   Gender <input type="text" id="genderbox">
+<br>
+   <button id="savebtn">save</button>
+
+    <table border="1" id="maintable">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+        </tr>
+    </table>
 
     <script>
 
-        radbtns = document.getElementsByName("gender")
-        console.log(radbtns);
-        
-        function calc()
-        {
-            heading = document.getElementById("heading")
+        savebtn = document.getElementById("savebtn")
+        maintable = document.getElementById("maintable")
 
-        var genderval = ""
-        radbtns.forEach(function(bt)
+        namebox = document.getElementById("namebox")
+        agebox = document.getElementById("agebox")
+        genderbox = document.getElementById("genderbox")
+        savebtn.addEventListener("click",function()
         {
-            if(bt.checked)
-            {
-                genderval = bt.value
-                heading.textContent = bt.value
-            }
+            
         })
-        console.log(genderval);
-    }
+
+    //     radbtns = document.getElementsByName("gender")
+    //     console.log(radbtns);
+        
+    //     function calc()
+    //     {
+    //         heading = document.getElementById("heading")
+
+    //     var genderval = ""
+    //     radbtns.forEach(function(bt)
+    //     {
+    //         if(bt.checked)
+    //         {
+    //             genderval = bt.value
+    //             heading.textContent = bt.value
+    //         }
+    //     })
+    //     console.log(genderval);
+    // }
+
+
     </script>
     
 </body>
