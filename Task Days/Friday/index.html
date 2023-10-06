@@ -44,7 +44,22 @@
         genderbox = document.getElementById("genderbox")
         savebtn.addEventListener("click",function()
         {
+            name = namebox.value
+            age = agebox.value
+            gender = genderbox.value
             
+            newRow = document.createElement("tr")
+            maintable.append(newRow)
+            
+            for(i=0;i<3;i++)
+            {
+                newData = document.createElement("td")
+                newData.textContent = name
+                newRow.append(newData)
+            }
+
+
+            console.log(maintable);
         })
 
     //     radbtns = document.getElementsByName("gender")
