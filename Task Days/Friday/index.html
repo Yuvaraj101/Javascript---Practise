@@ -51,12 +51,17 @@
             newRow = document.createElement("tr")
             maintable.append(newRow)
             
-            for(i=0;i<3;i++)
-            {
-                newData = document.createElement("td")
-                newData.textContent = name
-                newRow.append(newData)
-            }
+
+            newData = document.createElement("td")
+            newData.textContent = name
+            ageData = document.createElement("td")
+            newData.textContent = age
+            genderData = document.createElement("td")
+            newData.textContent = gender
+            newRow.append(newData)
+            newRow.appendChild(ageData)
+            newRow.append(genderData)
+            
 
 
             console.log(maintable);
