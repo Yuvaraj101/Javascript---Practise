@@ -3,91 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Document</title>
 </head>
 <body>
-
-    <!-- <input type="radio" name="gender" id="Male" value="Male">
-    <label for="Male">Male Person</label>
-    <input type="radio" name="gender" id="Female" value="Female">
-    <label for="Female">Female Person</label>
-
-    <h2 id="heading">see here</h2>
-
-    <button onclick="calc()">calculate</button> -->
-
- 
-
-    Name <input type="text" id="namebox"> 
+    <h1>table data</h1>
+    name:<input type="text" id="namebox"> <br>
     <br>
-   Age <input type="text" id="agebox"> 
+    age:<input type="text" id="agebox">
     <br>
-   Gender <input type="text" id="genderbox">
-<br>
-   <button id="savebtn">save</button>
+    <br>
+    <button id="addbtn">add</button>
 
-    <table border="1" id="maintable">
-        <tr>
-            <td>Name</td>
-            <td>Age</td>
-            <td>Gender</td>
-        </tr>
-    </table>
-
-    <script>
-
-        savebtn = document.getElementById("savebtn")
-        maintable = document.getElementById("maintable")
-
-        namebox = document.getElementById("namebox")
-        agebox = document.getElementById("agebox")
-        genderbox = document.getElementById("genderbox")
-        savebtn.addEventListener("click",function()
-        {
-            name = namebox.value
-            age = agebox.value
-            gender = genderbox.value
-            
-            newRow = document.createElement("tr")
-            maintable.append(newRow)
-            
-
-            newData = document.createElement("td")
-            newData.textContent = name
-            ageData = document.createElement("td")
-            newData.textContent = age
-            genderData = document.createElement("td")
-            newData.textContent = gender
-            newRow.append(newData)
-            newRow.appendChild(ageData)
-            newRow.append(genderData)
-            
-
-
-            console.log(maintable);
-        })
-
-    //     radbtns = document.getElementsByName("gender")
-    //     console.log(radbtns);
-        
-    //     function calc()
-    //     {
-    //         heading = document.getElementById("heading")
-
-    //     var genderval = ""
-    //     radbtns.forEach(function(bt)
-    //     {
-    //         if(bt.checked)
-    //         {
-    //             genderval = bt.value
-    //             heading.textContent = bt.value
-    //         }
-    //     })
-    //     console.log(genderval);
-    // }
-
-
-    </script>
     
+
 </body>
 </html>
