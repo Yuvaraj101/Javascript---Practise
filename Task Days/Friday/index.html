@@ -13,8 +13,31 @@
     <br>
     <br>
     <button id="addbtn">add</button>
+<br>
+<br>
+    <!-- empty table -->
+    <table id="maintable" border="1">
+        <tr>
+            <td>name</td>
+            <td>age</td>
+        </tr>
 
-    
+    </table>
+
+    <script>
+
+        addbtn = document.getElementById("addbtn")
+        addbtn.addEventListener("click",function(){
+            namedata = document.getElementById("namebox").value
+            agedata = document.getElementById("agebox").value
+            maintable = document.getElementById("maintable")
+
+            tr1 = document.createElement("tr")
+
+
+        })
+
+    </script>
 
 </body>
 </html>
