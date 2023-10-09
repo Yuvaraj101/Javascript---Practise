@@ -4,53 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <h1>table data</h1>
-    name:<input type="text" id="namebox"> <br>
+    Name:<input type="text" id="namebox">
     <br>
-    age:<input type="text" id="agebox">
+    Age:<input type="text" id="agebox">
     <br>
+    Gender:<input type="text" id="genderbox">
     <br>
     <button id="addbtn">add</button>
 <br>
 <br>
-    <!-- empty table -->
     <table id="maintable" border="1">
         <tr>
-            <td>name</td>
-            <td>age</td>
-            <td>action</td>
+            <td>NAME</td>
+            <td>AGE</td>
+            <td>GENDER</td>
+            <td>ACTION</td>
         </tr>
-
     </table>
 
-    <script>
+    <!-- <button onclick="deleteRow()"><i class="fa-solid fa-xmark" style="color: #ff0000;"></i></button> -->
+     <!-- <button id="deletebtn" onclick="deleteRow()">delete</button>  -->
 
-        addbtn = document.getElementById("addbtn")
-        addbtn.addEventListener("click",function(){
-            namedata = document.getElementById("namebox").value
-            agedata = document.getElementById("agebox").value
-            maintable = document.getElementById("maintable")
-
-            tr1 = document.createElement("tr")
-
-            nametd = document.createElement("td")
-            nametd.innerHTML = namedata
-            tr1.append(nametd)
-           
-            agetd = document.createElement("td")
-            agetd.innerHTML = agedata
-            tr1.appendChild(agetd)
-
-            maintable.appendChild(tr1)
-
-
-
-
-        })
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
