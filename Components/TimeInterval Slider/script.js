@@ -39,18 +39,18 @@ rightbtn.addEventListener("click",function()
 
 })
 
-//to make the slider move automactically after 4 seconds of delay
 
-// setInterval(() => {
-//     if(margin<200)
-//     {
-//         margin = margin + 100
 
-//         slider.style.marginLeft = "-" + margin + "vw"
-//     }
-//     else
-//     {
-//         margin = 0
-//         slider.style.marginLeft = "-" + margin + "vw"
-//     }
-// }, 4000);
+setInterval(() => {
+    if(margin<200)
+    {
+        margin = margin + 100
+
+        slider.style.marginLeft = "-" + margin + "vw"
+    }
+    else
+    {
+        margin = 0
+        slider.style.marginLeft = "-" + margin + "vw"
+    }
+}, 5000);
