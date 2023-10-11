@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dropdown menu</h1>
+
+    <select name="courses" id="">
+        <option value="Python">Python</option>
+        <option value="Programming in C">Programming in C</option>
+        <option value="Rust">Rust</option>
+        <option value="Go">Go</option>
+        <option value="Javascript">Javascript</option>
+    </select>
+
+    <button id="addbtn">submit</button>
+
+    <p id="para"></p>
+
+    <script>
+        para = document.getElementById("para")
+        addbtn = document.getElementById("addbtn")
+        menu = document.getElementsByName("courses")
+
+        addbtn.addEventListener("click",function()
+        {
+            // menu.forEach(element => {
+            //     console.log(element.value);
+            // });
+
+            menu.forEach(function(el)
+            {
+                para.innerHTML = el.value
+            })
+        })
+
+    </script>
+</body>
+</html>
