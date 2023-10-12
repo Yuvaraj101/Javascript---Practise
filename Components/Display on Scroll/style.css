@@ -6,3 +6,17 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.box{
+    padding: 20px;
+}
