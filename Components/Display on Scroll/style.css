@@ -6,20 +6,30 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .gallery{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 img{
     border-radius: 10px;
+    transition: 1s;
+}
+
+img:hover{
+    transform: scale(0.9);
+    cursor: pointer;
 }
 
 .box{
     padding: 20px;
+    text-align: center;
 }
 
 .navbar{
@@ -35,6 +45,11 @@ img{
 
 h1{
     padding: 10px;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: white;
 }
 
 button{
@@ -43,24 +58,47 @@ button{
 
 }
 
-li,button{
+li{
     font-size: 20px;
     text-decoration: none;
+    
 }
 
 nav li {
     display: inline-block;
     margin-left: 15px;
     padding: 15px;
+    transition: 1s;
+    border: none;
+    
 }
 
 button{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     border: none;
     background-color: yellow;
     color: black;
-    border-radius: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 1s;
+
+}
+
+button:hover{
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+li:hover{
+    cursor: pointer;
+    color: white;
+    border-bottom: 1px solid red;
+}
+
+h4{
+    color: black;
 }
