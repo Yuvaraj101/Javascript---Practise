@@ -12,10 +12,12 @@ window.addEventListener("scroll",function(){
         var boxy = el.getBoundingClientRect().top
         if (boxy > height){
             el.style.opacity = 0
+            el.style.transform = "scale(0.9)"
 
         }
         if (boxy < height){
             el.style.opacity = 1
+            el.style.transform = "scale(0.9)"
         }
     })
     
