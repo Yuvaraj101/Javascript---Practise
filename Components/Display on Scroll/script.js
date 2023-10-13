@@ -10,6 +10,10 @@ window.addEventListener("scroll",function(){
     {
         console.log(el);
         var boxy = el.getBoundingClientRect().top
+        if (boxy > height){
+            el.style.opacity = 0
+
+        }
         if (boxy < height){
             el.style.opacity = 1
         }

@@ -32,7 +32,7 @@ img:hover{
 .box{
     padding: 20px;
     text-align: center;
-    opacity: 0;
+    
     transition: 2s;
     
 }
@@ -46,6 +46,7 @@ img:hover{
     color: yellow;
     padding: 10px;
     align-items: center;
+
 }
 
 h1{
