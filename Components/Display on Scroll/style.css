@@ -107,3 +107,23 @@ i{
     font-size: 20px;
     padding: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    button{
+        display: none;
+    }
+
+    .navbar > nav{
+        display: none;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+
+#menu{
+    display: none;
+
+}
+
+}
