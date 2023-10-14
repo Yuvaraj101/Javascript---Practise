@@ -123,6 +123,10 @@ i{
     .navbar > nav{
         display: none;
     }
+
+    h1{
+        font-size: 25px;
+    }
   }
 
 @media only screen and (min-width: 768px) {
@@ -132,4 +136,11 @@ i{
 
 }
 
+}
+
+#like{
+    color: grey;
+    font-size: 30px;
+    position: relative;
+    bottom: 40px;
 }
