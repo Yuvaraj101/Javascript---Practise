@@ -142,5 +142,11 @@ i{
     color: grey;
     font-size: 30px;
     position: relative;
-    bottom: 40px;
+    bottom: 22%;
+    left: 30%;
+}
+
+#like:hover{
+    color: red;
+    cursor: pointer;
 }
