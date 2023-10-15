@@ -111,7 +111,6 @@ h4{
 
 i{
     font-size: 20px;
-    padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -150,3 +149,4 @@ i{
     color: red;
     cursor: pointer;
 }
+
