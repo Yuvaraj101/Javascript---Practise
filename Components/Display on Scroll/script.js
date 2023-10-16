@@ -1,6 +1,6 @@
 img = document.querySelectorAll(".box")
 
-console.log(img);
+// console.log(img);
 
 window.addEventListener("scroll",function(){
 
@@ -8,7 +8,7 @@ window.addEventListener("scroll",function(){
 
     img.forEach(function(el)
     {
-        console.log(el);
+        // console.log(el);
         var boxy = el.getBoundingClientRect().top
         if (boxy > height){
             el.style.opacity = 0
@@ -24,3 +24,18 @@ window.addEventListener("scroll",function(){
     // var boxy = img.getBoundingClientRect().top
 
 })
+
+var like = document.querySelectorAll("#like")
+
+like.forEach(function(el)
+{
+    var res = el.addEventListener("click",function()
+    {
+        
+    })
+})
+// like.addEventListener("click",function()
+// {
+//     console.log(like);
+//     console.log("gg");
+// })
