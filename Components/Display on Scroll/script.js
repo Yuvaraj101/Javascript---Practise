@@ -31,7 +31,8 @@ like.forEach(function(el)
 {
     var res = el.addEventListener("click",function()
     {
-        
+        el.style.color = "red"
+        console.log(el);
     })
 })
 // like.addEventListener("click",function()
