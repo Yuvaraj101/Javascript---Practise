@@ -64,7 +64,7 @@ button{
 
 }
 
-li{
+.header > li{
     font-size: 20px;
     text-decoration: none;
     
@@ -99,7 +99,7 @@ button:hover{
     transform: scale(0.9);
 }
 
-li:hover{
+.header > li:hover{
     cursor: pointer;
     color: white;
     border-bottom: 1px solid red;
@@ -148,5 +148,38 @@ i{
 #like:hover{
     color: red;
     cursor: pointer;
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 30vw;
+    height: 40vh;
+    background: black;
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    color: yellow;
+    position: absolute;
+    margin-left: -100%;
+    transition: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#cancel{
+    font-size: 20px;
+    color: red;
+    margin-left: 80%;
+    padding: 10px;
+}
+
+
+#cancel:hover{
+    cursor: pointer;
+}
+
+.sider > li{
+    font-size: 20px;
+    padding: 15px;
 }
 

@@ -27,16 +27,40 @@ window.addEventListener("scroll",function(){
 
 var like = document.querySelectorAll("#like")
 
+var likeCount = 0
 like.forEach(function(el)
 {
     var res = el.addEventListener("click",function()
     {
+        likeCount = likeCount + 1
         el.style.color = "red"
-        console.log(el);
+        if (likeCount%2==0)
+        {
+            el.style.color = "grey"
+
+        }
+        console.log(likeCount);
     })
 })
-// like.addEventListener("click",function()
-// {
-//     console.log(like);
-//     console.log("gg");
-// })
+
+
+var menu = document.getElementById("menu")
+menu.addEventListener("click",function()
+{
+    console.log("dsf");
+})
+
+var sidebar = document.querySelector(".sidebar")
+var menu = document.getElementById("menu")
+var cancel = document.getElementById("cancel")
+
+menu.addEventListener("click",function()
+{
+    sidebar.style.marginLeft = "0"
+})
+
+cancel.addEventListener("click",function()
+{
+    sidebar.style.marginLeft = "-100" + "%"
+})
+
