@@ -30,16 +30,18 @@ var like = document.querySelectorAll("#like")
 var likeCount = 0
 like.forEach(function(el)
 {
-    var res = el.addEventListener("click",function()
+    el.addEventListener("click",function()
     {
-        likeCount = likeCount + 1
-        el.style.color = "red"
-        if (likeCount%2==0)
+
+        if (el.style.color === "red")
         {
             el.style.color = "grey"
-
         }
-        console.log(likeCount);
+
+        else
+        {
+            el.style.color = "red"
+        }
     })
 })
 
