@@ -66,3 +66,9 @@ cancel.addEventListener("click",function()
     sidebar.style.marginLeft = "-100" + "%"
 })
 
+var wishlist = document.getElementById("wishlist")
+wishlist.addEventListener("click",function()
+{
+    console.log("test");
+})
+
