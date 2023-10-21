@@ -26,6 +26,7 @@ window.addEventListener("scroll",function(){
 })
 
 var like = document.querySelectorAll("#like")
+var wishlist = document.getElementById("wishlist")
 
 var likeCount = 0
 like.forEach(function(el)
@@ -36,11 +37,16 @@ like.forEach(function(el)
         if (el.style.color === "red")
         {
             el.style.color = "grey"
+            likeCount = likeCount - 1
+            wishlist.innerHTML = likeCount
         }
-
+        
         else
         {
             el.style.color = "red"
+            likeCount = likeCount + 1
+            wishlist.innerHTML = likeCount
+
         }
     })
 })
