@@ -4,14 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            border: 1px solid red;
+        }
+
+        .child{
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            /* width: 50%; */
+            /* height: 50%; */
+        }
+
+        .child > img{
+            /* object-fit: contain; */
+            /* mix-blend-mode: color-burn; */
+        }
+
+
+    </style>
 </head>
 <body>
     <div class="main">
         <div class="child">
-            
+
+    
+            <img src="lightOff.jpg" alt="" id="light">
+
+            <button onclick="lightOff()">Light off</button>
+            <button onclick="lightOn()">Light on</button>
 
         </div>
 
     </div>
+
+    <script>
+        var light = document.getElementById("light")
+        function lightOn(){
+            light.src = "lightOn.jpg"
+            console.log("on");
+
+        }
+
+        function lightOff(){
+            light.src = "lightOff.jpg"
+            console.log("off");
+        }
+    </script>
 </body>
 </html>
